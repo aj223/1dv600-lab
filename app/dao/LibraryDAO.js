@@ -12,14 +12,16 @@
     var LibraryDAO = {
 
         // Get the entire file from the file system.
-        readXMLFile: function(callback) {
+        readXMLFile: function (callback) {
 
         },
 
         // Write the entire file from the file system.
-        writeXMLFile: function(data) {
+        writeXMLFile: function (data) {
 
-        }
+
+             }
+
     };
 
     module.exports = LibraryDAO;

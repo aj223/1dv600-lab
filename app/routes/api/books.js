@@ -15,7 +15,7 @@
     router.get('/', function (req, res) {
         res.type('json');
 
-        GetBooksResource(function (data) {
+        GetBooksResource (function(data) {
             res.send(data);
         });
     });
