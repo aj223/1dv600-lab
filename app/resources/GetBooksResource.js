@@ -10,12 +10,14 @@
     var allBooks = []; //empty array for books.
 
     //create two books and add to array.
-    var book1 = books(1, "1984", "Orwell", "fiction", "01/01/1984", 100, "dystopian fiction");
-    book1.AUTHOR = "Orwell";
+    var book1 = books(1, "1984", "Orwell, G.", "fiction", "24/01/2004", 100, "dystopian fiction");
     allBooks.push(book1);
 
-    var book2 = books(2, "Lord of the Rings", "Tolkien", "fantasy", "01/01/1940", 100, "fantasy classic");
+    var book2 = books(2, "Brave New World", "Huxley, A.", "fiction", "06/12/2007", 100, "dystopian fiction");
     allBooks.push(book2);
+
+    var book3 = books(3, "The Handmaid's Tale", "Atwood, M.", "fiction", "5/07/1996", 100, "dystopian fiction");
+    allBooks.push(book3);
 
     //convert list of books to JSON.
     var allBooksJSON = JSON.stringify(allBooks);
