@@ -42,6 +42,7 @@
             res.type('json');
             EditBookResource(req.params.bookId, req.body, function () {
                 res.send("{}");
+
             });
         })
 

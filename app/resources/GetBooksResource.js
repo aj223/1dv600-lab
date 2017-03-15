@@ -19,15 +19,20 @@
     var book3 = books(3, "The Handmaid's Tale", "Atwood, M.", "fiction", "5/07/1996", 100, "dystopian fiction");
     allBooks.push(book3);
 
+    var xmlBooks = LibraryDAO.readXMLFile(); //books converted from xml to json.
+
     //convert list of books to JSON.
     var allBooksJSON = JSON.stringify(allBooks);
+
 
     //export function to be used in api/books.
     module.exports = function getBooks(callback, title) { // The title is optional and is only present when searching. (You need yo modify the books.js file first)
 
-        console.log(allBooks); //books appear in terminal when GET request to server is made.
-        console.log(allBooksJSON); //same for JSON version.
-        callback(allBooksJSON); //JSON object sent to server and appears in browser on localhost:9090/api/books.
+        //console.log(allBooks); //books appear in terminal when GET request to server is made.
+        //console.log(allBooksJSON); //same for JSON version.
+        //console.log(xmlBooks);
+        callback(xmlBooks); //JSON object sent to server and appears in browser on localhost:9090/api/books.
+
     };
 
 }());
